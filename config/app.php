@@ -127,7 +127,7 @@ return [
     'blockchain' => [
         'ganache_host' => env('GANACHE_HOST', 'http://127.0.0.1:7454'),
         'contract_address' => env('CONTRACT_ADDRESS', ''),
+        'from_address' => env('FROM_ADDRESS', ''),
         'abi_json_path' => env('ABI_JSON_PATH', '')
     ]
-
 ];

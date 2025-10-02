@@ -93,7 +93,7 @@ class DocsVerification extends Component
                     $this->errorMessage = 'Dokumen sudah pernah disimpan di blockchain.';
                 } else {
                     $contract->send('storeHash', $hash, [
-                        'from' => '0xEFe46E48464776813BF0297737DC4f793C542bC6',
+                        'from' => config('app.blockchain.from_address'),
                         'gas' => '0x200b20',
                     ], function ($err, $transaction) {
                         if ($err !== null) {
